@@ -62,3 +62,16 @@ const knit = () =>{
     }
   }
   powerButton()()
+
+  //----- Model a Vending Machine -----
+
+vendingMachine = {
+    snacks: [
+      {name:"doritos",price:5.99},{name:"lays",price:4.99},{name:"cheetos",price:6.99}
+      ],
+    vend: vend = (index) =>{
+     return vendingMachine.snacks[index]
+    }
+  }
+  
+  vendingMachine.vend(0)
