@@ -75,3 +75,63 @@ vendingMachine = {
   }
   
   vendingMachine.vend(0)
+
+  //------Callbacks-----
+//Question 1
+const add = (num1,num2) => {
+    return num1 + num2
+  }
+  add(2,3)
+  
+  //Question 2
+  const substract = (num1,num2) => {
+    return num1 - num2
+  }
+  substract(5,4)
+  
+  //Question 3
+  const multiply = (num1,num2) => {
+    return num1*num2
+  }
+  multiply(5,4)
+  
+  //Question 4
+  const divide = (num1,num2) => {
+    return num1/num2
+  }
+  divide(10,2)
+  
+  //Question 5 & 6
+  const calculate = (num1,num2,callback) =>{
+   return callback(num1,num2)
+  }
+  
+  //Question 7
+  
+  calculate(10,5,add)
+  calculate(10,5,substract)
+  calculate(10,5,divide)
+  calculate(10,5,multiply) 
+  
+  //Function definition placement
+  
+  const bar = () => {
+      console.log('bar here');
+  }
+  
+  const foo = () => {
+      console.log('foo here');
+  }
+  bar()
+  foo()
+  
+  //Error reading 
+  
+  //What is meant by the error(s) this produces?
+  // An arrow function cannot be invoked before it is defined 
+  
+  foo();
+  
+  const foo ()=>{
+      console.log('hi');
+  }
